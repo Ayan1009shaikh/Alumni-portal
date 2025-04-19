@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentor Dashboard - Mumbai University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body class="dark">  <!-- Navbar -->  <header class="navbar">
+    <img src="https://via.placeholder.com/100x40?text=Mumbai+Uni" alt="Mumbai University Logo" class="logo">
+    <nav class="nav-items">
+      <a href="#home">Home</a>
+      <a href="#requests">Requests</a>
+      <a href="#post-job">Post Job</a>
+      <a href="#chats">Chats</a>
+      <a href="#events">Events</a>
+      <a href="#news">News</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="theme-toggle" onclick="toggleTheme()">☾</div>
+    <div class="profile">
+      <img src="https://via.placeholder.com/32?text=M" class="profile-pic" alt="Mentor Profile">
+      <button class="edit-btn">Edit</button>
+    </div>
+  </header>  <!-- Main Content -->  <main>
+    <section id="home">
+      <h2>Welcome, Mentor!</h2>
+      <img src="https://via.placeholder.com/800x300?text=Mentorship+Dashboard" class="banner" alt="Banner">
+      <p>You can accept student requests, post jobs/internships, and view chat history here.</p>
+    </section><section id="requests">
+  <h2>Mentorship Requests</h2>
+  <div class="card">
+    <img src="https://via.placeholder.com/100x100?text=Student" alt="Student Photo">
+    <h3>Rahul Deshmukh</h3>
+    <p>Interested in Web Development guidance.</p>
+    <button>Accept</button>
+    <button style="background:#e74c3c">Decline</button>
+  </div>
+</section>
+
+<section id="post-job">
+  <h2>Post a Job or Internship</h2>
+  <form>
+    <label>Job Title:</label><br>
+    <input type="text" placeholder="e.g. React Intern"><br><br>
+    <label>Description:</label><br>
+    <textarea rows="3" placeholder="Describe the role"></textarea><br><br>
+    <label>Deadline:</label>
+    <input type="date"><br><br>
+    <button type="submit">Post</button>
+  </form>
+</section>
+
+<section id="chats">
+  <h2>Chats</h2>
+  <p>You can chat with students here. (Feature coming soon)</p>
+</section>
+
+<section id="events">
+  <h2>University Events</h2>
+  <img src="https://via.placeholder.com/800x300?text=Upcoming+Webinar" class="event-pic" alt="Event">
+  <p>Join the upcoming alumni webinar on mentorship strategies.</p>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <img src="https://via.placeholder.com/800x200?text=News+Update" class="news-pic" alt="News">
+  <p>Mentor spotlight: Riya Shah featured in Google’s Women in Tech series!</p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Contact: mentor.support@mumbaiuni.ac.in | Phone: +91-22-11112222</p>
+</section>
+
+  </main></body>
+</html>
