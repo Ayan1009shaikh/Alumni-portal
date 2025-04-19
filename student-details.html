@@ -1,1 +1,112 @@
-<h1>Student Details Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Student Profile Details</h2>
+
+<form id="studentForm">
+  <label>First Name</label>
+  <input type="text" required>
+
+  <label>Last Name</label>
+  <input type="text" required>
+
+  <label>Age</label>
+  <input type="number" min="10" max="100" required>
+
+  <label>Gender</label>
+  <select required>
+    <option value="">Select</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+
+  <label>Bachelor or Masters</label>
+  <select required>
+    <option value="">Select</option>
+    <option>Bachelor</option>
+    <option>Masters</option>
+  </select>
+
+  <label>Field of Studying</label>
+  <input type="text" required>
+
+  <label>Degree Name</label>
+  <input type="text" required>
+
+  <label>Expected Passing Year</label>
+  <input type="number" placeholder="e.g., 2026" required>
+
+  <label>Field of Learning (ex: Web, Android...)</label>
+  <input type="text" required>
+
+  <label>Hobbies</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Upload Your Photo (Max: 2MB)</label>
+  <input type="file" accept="image/*" required>
+
+  <label>Upload College ID (Max: 2MB)</label>
+  <input type="file" accept="image/*" required>
+
+  <button type="submit">Submit Profile</button>
+</form>
+
+<script>
+  document.getElementById("studentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Profile saved successfully (fake mode)");
+    window.location.href = "student-dashboard.html";
+  });
+</script>
+
+</body>
+    </html>
