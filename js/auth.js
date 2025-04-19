@@ -11,7 +11,6 @@ import {
   setDoc,
   getDoc
 } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
-
 // SIGNUP
 const signupForm = document.getElementById("signup");
 signupForm.addEventListener("submit", async (e) => {
