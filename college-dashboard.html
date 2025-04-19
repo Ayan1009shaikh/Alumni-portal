@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Dashboard - Mumbai University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body class="dark">  <!-- Navbar -->  <header class="navbar">
+    <img src="https://via.placeholder.com/100x40?text=Mumbai+Uni" alt="Mumbai University Logo" class="logo">
+    <nav class="nav-items">
+      <a href="#home">Home</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#students">Students</a>
+      <a href="#post-job">Post Job</a>
+      <a href="#events">Events</a>
+      <a href="#news">News</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="theme-toggle" onclick="toggleTheme()">☾</div>
+    <div class="profile">
+      <img src="https://via.placeholder.com/32?text=C" class="profile-pic" alt="College Admin">
+      <button class="edit-btn">Edit</button>
+    </div>
+  </header>  <!-- Main Content -->  <main>
+    <section id="home">
+      <h2>Welcome, College Admin</h2>
+      <img src="https://via.placeholder.com/800x300?text=College+Admin+Panel" class="banner" alt="College Banner">
+      <p>You can manage mentors, students, post jobs, upload news and more.</p>
+    </section><section id="mentors">
+  <h2>Mentor List</h2>
+  <ul>
+    <li>Riya Shah - Android Dev</li>
+    <li>Aman Jain - Web Dev</li>
+    <li>Priya Menon - AI Research</li>
+  </ul>
+</section>
+
+<section id="students">
+  <h2>Student List</h2>
+  <ul>
+    <li>Rahul Deshmukh - Web Dev</li>
+    <li>Meera Patil - Cybersecurity</li>
+    <li>Neha Singh - Data Science</li>
+  </ul>
+</section>
+
+<section id="post-job">
+  <h2>Post a Job / Internship</h2>
+  <form>
+    <label>Role Title:</label><br>
+    <input type="text" placeholder="e.g. AI Intern"><br><br>
+    <label>Description:</label><br>
+    <textarea rows="3" placeholder="Details about the role..."></textarea><br><br>
+    <label>Application Deadline:</label>
+    <input type="date"><br><br>
+    <button type="submit">Post</button>
+  </form>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <img src="https://via.placeholder.com/800x300?text=College+Event" class="event-pic" alt="Event Image">
+  <p>Annual Placement Drive - June 2025</p>
+</section>
+
+<section id="news">
+  <h2>Latest News</h2>
+  <img src="https://via.placeholder.com/800x200?text=News" class="news-pic" alt="News">
+  <p>Results Declared for Final Year Students</p>
+</section>
+
+<section id="about">
+  <h2>About Mumbai University</h2>
+  <p>Support: admin@mumbaiuni.ac.in | Phone: +91-22-22223333</p>
+</section>
+
+  </main></body>
+</html>
