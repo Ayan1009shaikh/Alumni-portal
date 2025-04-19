@@ -1,1 +1,73 @@
-<h1>mentor Details Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentor Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+    h2 { text-align: center; color: #333; }
+    form {
+      max-width: 700px; margin: auto; background: white;
+      padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;
+    }
+    label { font-weight: bold; }
+    input, select, textarea {
+      width: 100%; padding: 10px; margin: 8px 0;
+      border: 1px solid #ccc; border-radius: 8px;
+    }
+    button {
+      background: #28a745; color: white;
+      padding: 12px; border: none; border-radius: 8px;
+      cursor: pointer; font-size: 16px;
+    }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+
+<h2>Mentor Profile Details</h2>
+
+<form id="mentorForm">
+  <label>First Name</label>
+  <input type="text" required>
+
+  <label>Last Name</label>
+  <input type="text" required>
+
+  <label>Age</label>
+  <input type="number" min="18" required>
+
+  <label>Gender</label>
+  <select required>
+    <option value="">Select</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+
+  <label>Job Designation / Field</label>
+  <input type="text" placeholder="e.g., Android Developer" required>
+
+  <label>Hobbies</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Upload Your Photo (Max: 2MB)</label>
+  <input type="file" accept="image/*" required>
+
+  <label>Upload Degree Certificate (Max: 2MB)</label>
+  <input type="file" accept="image/*" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById("mentorForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Mentor profile saved (fake mode)");
+    window.location.href = "mentor-dashboard.html";
+  });
+</script>
+
+</body>
+</html>
